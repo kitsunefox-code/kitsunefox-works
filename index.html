@@ -46,6 +46,7 @@ h2 + .note{color:var(--sub); font-size:14px; margin:0 0 20px}
 .card a.go{margin-top:auto; padding-top:8px; font-size:13px; font-weight:700; color:var(--accent); text-decoration:none}
 .card a.go:hover{text-decoration:underline}
 video{width:100%; aspect-ratio:16/9; border-radius:12px; border:1px solid var(--line); background:#000; display:block}
+video.vert{width:min(320px,100%); aspect-ratio:9/16; margin:0 auto}
 .vidnote{font-size:13px; color:var(--sub); margin-top:10px}
 ul.plain{margin:0; padding-left:1.2em; font-size:14px; color:var(--sub)}
 ul.plain li{margin:6px 0}
@@ -71,6 +72,15 @@ footer{margin:64px 0 48px; padding-top:20px; border-top:1px solid var(--line); c
   キャラクター・背景・図解パネル・BGMはすべて自作、音声はAivisSpeech（クレジット表記で商用可のモデル）です。<br>
   話している側だけを明るくする／字幕がキャラの顔にかからない位置と改行／数字の話は図に起こして話の進みに合わせて切り替える、という作り方をしています。<br>
   台本（CSV・TSV）からYMM4プロジェクト（.ymmp）を組み立てる処理を自分で書いているため、本数が増えても同じ体裁で速く作れます。
+</p>
+
+<h2>動画（2chショート・縦60秒）</h2>
+<p class="note">いらすとやとAIの読み上げで作った、2ch風スカッとショートのサンプルです（50秒）。話はオリジナルの書き下ろしです。</p>
+<video class="vert" src="media/sample-2ch-short.mp4" controls preload="metadata" playsinline></video>
+<p class="vidnote">
+  台本・イラストの選定・テロップ・効果音・BGMまですべて自分で用意しています。効果音とBGMは自作、読み上げは商用利用可のモデル、イラストはいらすとや（規約の上限20点以内・出典一覧あり）です。<br>
+  カットの頭で一瞬だけテロップを大きく出す／強調語だけ色を変えてマーカーを引く／レスが出るたびに小さくポップ音を鳴らす／オチの直前で一拍おいて落とす、という作り方をしています。<br>
+  尺は「次のカットが始まるまで」で計算しているため、本数が増えても音と画がズレません。台本を差し替えれば同じ体裁のまま量産できます。
 </p>
 
 <h2>Webアプリ・サイト</h2>
